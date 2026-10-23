@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=75,<76"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "user-profile-management-backend"
+version = "0.1.0"
+description = "Local FastAPI backend for the Admin User Profile Management application"
+requires-python = ">=3.12"
+dependencies = [
+    "alembic==1.20.1",
+    "argon2-cffi==25.1.0",
+    "email-validator==2.3.0",
+    "fastapi==0.161.1",
+    "pydantic==2.14.1",
+    "pydantic-settings==2.16.1",
+    "PyMySQL==1.2.3",
+    "SQLAlchemy==2.1.6",
+    "uvicorn==0.54.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "httpx==0.28.1",
+    "mypy==2.4.0",
+    "pytest==9.1.1",
+    "pytest-cov==7.1.0",
+    "ruff==0.17.2",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

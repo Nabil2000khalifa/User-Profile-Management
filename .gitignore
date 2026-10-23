@@ -1,0 +1,61 @@
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+*.local
+
+# Private keys, certificates, and local database artifacts
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.db
+*.sqlite
+*.sqlite3
+*.dump
+*.bak
+
+# Python environments and caches
+.venv/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node dependencies and frontend output
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.tsbuildinfo
+
+# Test and coverage artifacts
+.coverage
+.coverage.*
+coverage/
+htmlcov/
+test-results/
+playwright-report/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Editors and operating systems
+.idea/
+.vscode/*
+!.vscode/settings.json
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Separate local engineering skills checkout
+/engineering-skills/

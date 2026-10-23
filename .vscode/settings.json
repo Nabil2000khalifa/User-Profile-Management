@@ -1,0 +1,36 @@
+{
+  "files.exclude": {
+    "**/.venv": true,
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/.ruff_cache": true,
+    "**/.mypy_cache": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/.vite": true,
+    "**/.vitest": true,
+    "**/*.tsbuildinfo": true,
+    "**/coverage": true,
+    "**/htmlcov": true,
+    "**/test-results": true,
+    "**/playwright-report": true,
+    "**/engineering-skills": true
+  },
+  "search.exclude": {
+    "**/.venv": true,
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/.ruff_cache": true,
+    "**/.mypy_cache": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/.vite": true,
+    "**/.vitest": true,
+    "**/*.tsbuildinfo": true,
+    "**/coverage": true,
+    "**/htmlcov": true,
+    "**/test-results": true,
+    "**/playwright-report": true,
+    "**/engineering-skills": true
+  }
+}
